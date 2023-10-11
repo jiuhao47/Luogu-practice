@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    char c[4];
+    char c[5];
     int i;
     i = 0;
     while (i < 5)
@@ -11,8 +11,9 @@ int main()
     }
     while (i > 0)
     {
-        --i;
-        printf("c[%d]=%c\n", i, c[i]);
+        i--;
+        printf("%c", c[i]);
     }
+
     return 0;
 }
